@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pagina</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>hola mundo...</h1> 
+    <h1>hola mundo...</h1>
+    <p>complete el formulario de ...</p>
+    <form>
+        <label for="name">nombre</label>
+        <input type="text" name="name" placeholder="ingrese su nombre">
+        <br>
+        <label for="lastname">apellido</label>
+        <input type="text" name="lastname" value="hola">
+        <br>
+        <label for="password">contraseña</label>
+        <input type="password" name="password" autofocus>
+        <br>
+        <label for="date">fecha de nacimiento</label>
+        <input type="date" name="date">
+        <br>
+        <label for="email">correo</label>
+        <input type="email" name="correo" readonly>
+        <br>
+        <label for="msj">mensaje</label>
+        <textarea name="msj" rows="10" cols="20"></textarea>
+        <br>
+        <label for="dni">subir foto dni</label>
+        <input type="file" name="dni">
+        <br>
+        <label for="carrera">carrera</label>
+        <br>
+        <input type="checkbox" name=" carrera"> carrera1
+        <input type="checkbox" name="carrera"> carrera2
+        <br>
+        <label for="lenguaje">lengiaje de programacion</label>
+        <br>
+        <input type="radio" name="lenguaje"> html
+        <input type="radio" name="lenguaje"> css
+        <br>
+        <label for="localidad"> localidad</label>
+        <select name="localidad" id="localidad">
+
+            <option value="azcuenaga"> azcuenaga </option>
+            <option value="cucullo"> cucullo </option>
+        </select>
+        <br>
+        <button type="reset">cancelar</button>
+        <button type="submit">aceptar</button>
+    </form>
+    <br>
+    <ol>
+        <li><a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank"> html </a></li>
+        <li><a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank"> css</a></li>
+        <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">
+                java script</a></li>
+        <li><a href="https://es.react.dev/" target="_blank"> <img
+                    src="data:image/png;base64,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"
+                    alt="logo react" title="logo de react"></a></li>
+    </ol>
 </body>
 </html>
